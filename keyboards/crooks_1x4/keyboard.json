@@ -1,0 +1,57 @@
+{
+    "manufacturer": "wrcrooks",
+    "keyboard_name": "crooks_1x4",
+    "maintainer": "wrcrooks",
+    "development_board": "kb2040",
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": false,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true,
+        "oled": true,
+        "rgblight": true
+    },
+    "matrix_pins": {
+        "direct": [
+          ["GP2", "GP3", "GP4", "GP5"]
+        ]
+    },
+    "ws2812": {
+      "pin": "GP10",
+      "driver": "vendor",
+      "rgbw": true
+    },
+    "rgblight": {
+      "led_count": 4,
+      "driver": "ws2812",
+      "animations": {
+        "breathing": true
+      },
+      "default": {
+        "on": true,
+        "animation": "breathing",
+        "hue": 120,
+        "sat": 255,
+        "val": 127,
+        "speed": 10
+      }
+    },
+    "url": "",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x2113",
+        "vid": "0x413C"
+    },
+    "layouts": {
+      "LAYOUT_ortho_1x4": {
+        "layout": [
+          {"x": 0, "y": 0, "matrix": [0, 0]},
+          {"x": 1, "y": 0, "matrix": [0, 1]},
+          {"x": 2, "y": 0, "matrix": [0, 2]},
+          {"x": 3, "y": 0, "matrix": [0, 3]}
+        ]
+      }
+    }
+}
